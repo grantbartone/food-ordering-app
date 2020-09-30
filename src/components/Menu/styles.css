@@ -1,0 +1,41 @@
+.Menu {
+    padding: 12px;
+}
+
+.MenuItem {
+    display: flex;
+    margin:12px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: orange;
+}
+
+.ItemName {
+    font-weight: bold;
+}
+
+.ItemSize {
+    text-transform: capitalize;
+}
+
+.ItemLeft {
+    flex-grow: 3;
+}
+
+.ItemRight {
+    flex-grow: 2;
+    max-width: 100px;
+    background-color: gray;
+    text-align: center;
+    line-height: 85px;
+}
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+}
+
+.toggle div {
+    margin: 10px 15px 0;
+}

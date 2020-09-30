@@ -1,0 +1,13 @@
+.Cart {
+    padding: 12px;
+    border-left: 1px solid gray;
+}
+
+.CartItem {
+    
+}
+
+.Subtotal {
+position: fixed;
+bottom: 12px;
+}
