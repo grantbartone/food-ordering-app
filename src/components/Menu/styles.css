@@ -1,10 +1,14 @@
+h1 {
+    text-align: center;
+}
+
 .Menu {
-    padding: 12px;
+    padding: 0 12px;
 }
 
 .MenuItem {
     display: flex;
-    margin:12px;
+    margin-bottom:12px;
     padding: 12px;
     border: 1px solid black;
     border-radius: 6px;

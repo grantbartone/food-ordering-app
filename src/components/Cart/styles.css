@@ -4,10 +4,23 @@
 }
 
 .CartItem {
-    
+    display: flex;
+    flex-direction: row;
+}
+
+.quantity {
+    margin-right: 12px;
+}
+
+.remove {
+    margin: 12px 0 24px;
 }
 
 .Subtotal {
-position: fixed;
-bottom: 12px;
+    position: fixed;
+    bottom: 12px;
+}
+
+.bold {
+    font-weight: bold;
 }

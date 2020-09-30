@@ -65,11 +65,18 @@ function App() {
         ]
       }
 
-      /* TODO: Fix fetch issue to get the data from remote
-      const url = 'https://mobile-dev-code-project.s3-us-west-2.amazonaws.com/project.json'
-      const response = await fetch(url, { mode: 'no-cors' })
-      const data = response.json()
+      /* Due to the CORS policy: No 'Access-Control-Allow-Origin' on the provided menu resource,
+      I've implemented a work-around to load the menu locally unless the 'fetchmenu' query parameter
+      is appended to the app's URL as shown in the example below to use along with a Chrome browser
+      plugin called "Moesif Origin & CORS Changer":
+      http://localhost:3000/?fetchmenu
       */
+     const fetchMenu = new URLSearchParams(window.location.search).has('fetchmenu')
+     if (fetchMenu) {
+        const url = 'https://mobile-dev-code-project.s3-us-west-2.amazonaws.com/project.json'
+        const response = await fetch(url)
+        data = await response.json()
+      }
 
       const menuData = []
       for (const item of data.menu) {
