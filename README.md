@@ -1,25 +1,18 @@
 # Project Summary
 This Fast Food Ordering System Prototype project was timeboxed and functionally complete within a
-roughly two-hour timeframe, with the exception of a CORS-related issue I encountered while
-attempting to fetch the JSON menu data from the provided remote origin URL and some minor structure/
-styling improvements. I've since created a work-around for the menu fetch operation, which requires
-a browser plugin and a query parameter when accessing the app that I've detailed in the App.js
-component code.
-
-Also, I've also laid out a prioritized roadmap of improvements below I'd tackle in order if given
-more time, both for the current "V1.0" implementation and a more complex "V2.0" implementation
-that's both a more intuitive and customizabled user experience in the future.
+roughly two-hour timeframe. Also, I've also laid out a prioritized roadmap of improvements below I'd
+tackle in order if given more time, both for the current "V1.0" implementation and a more complex
+"V2.0" implementation that's both a more intuitive and customizabled user experience in the future.
 
 
 ## V1.x Prioritized Roadmap
-1. Fix CORS menu import issue
-2. Improve mobile resposiveness for primary mobile-first use case
-3. Add user-friendly 'Loading...' and 'Error' states for fetching and menu failures, "Empty Cart"
+1. Improve mobile resposiveness for primary mobile-first use case
+2. Add user-friendly 'Loading...' and 'Error' states for fetching and menu failures, "Empty Cart"
 state
-4. Expand critical-path test coverage: menu fetch response code (200), Subtotal calculation, menu
+3. Expand critical-path test coverage: menu fetch response code (200), Subtotal calculation, menu
 item counts vs. menu data, cart quantities
-5. Improve aesthetic appearance (colors, images, animated transitions, etc)
-6. Extra: An easy "Submit Order" form button that sends an email with the order contents to the
+4. Improve aesthetic appearance (colors, images, animated transitions, etc)
+5. Extra: An easy "Submit Order" form button that sends an email with the order contents to the
 restaurant (and optionally the customer by using a text input field)
 
 
