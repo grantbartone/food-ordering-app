@@ -11,7 +11,7 @@ export default function Cart({ menu, cart, handleRemoveAll }) {
         <div className="Cart">
             {menu.map((item, idx) => {
                 return cart[idx] > 0 && (
-                    <div className="CartItem" key={idx}>
+                    <div className="CartItem" key={idx} data-testid="cart-item">
                         <div className="quantity">{cart[idx]}</div>
                         <div>
                             <div><label className="bold">{item.item}</label> - {item.size}</div>
@@ -25,7 +25,7 @@ export default function Cart({ menu, cart, handleRemoveAll }) {
             })}
             <div className="Subtotal">
                 <label className="bold">Subtotal</label>
-                <div>{dollarAmount(subTotalAmount)}</div>
+                <div data-testid="subtotal">{dollarAmount(subTotalAmount)}</div>
             </div>
         </div>
     )

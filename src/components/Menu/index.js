@@ -8,7 +8,7 @@ export default function Menu({ menu, cart, handleRemoveItem, handleAddItem }) {
             <h1>Menu</h1>
             <div className="Menu">
                 {menu.map((menuItem, idx) => (
-                    <div className="MenuItem" key={idx}>
+                    <div className="MenuItem" key={idx} data-testid="menu-item">
                         <div className="ItemLeft">
                             <div className="ItemName">{menuItem.item}</div>
                             <div className="ItemSize">Size: {menuItem.size}</div>

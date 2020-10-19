@@ -25,3 +25,9 @@ other types of options to add in the future (ie- extra hot sauce, etc). This app
 validation to ensure that a "size" is selected before adding to cart, but overall is more intuitive
 with fewer, more consolidated options per screen, and also provides a platform to add additional
 capabilities and options going forward.
+
+<img src="/app-demo.gif" alt="Food Ordering App Video (GIF)">
+
+<img src="/screenshot1.png" alt="Food Ordering App - Empty Cart">
+
+<img src="/screenshot2.png" alt="Food Ordering App - Items in Cart">
